@@ -26,10 +26,15 @@ function CreateUser() {
       <div className="create__user">
         <h2>Create User</h2>
         <form onSubmit={handleCreate} className="create__user-form" action="">
-          <input name="name" type="text" placeholder="name" />
-          <input name="profession" type="text" placeholder="profession" />
-          <input name="age" type="number" placeholder="age" />
-          <select name="gender" id="">
+          <input required name="name" type="text" placeholder="name" />
+          <input
+            required
+            name="profession"
+            type="text"
+            placeholder="profession"
+          />
+          <input required name="age" type="number" placeholder="age" />
+          <select required name="gender" id="">
             <option value="">gender</option>
             <option value="male">male</option>
             <option value="female">female</option>
